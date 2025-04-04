@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | Modern UI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p>Enter your birthdate & time:</p>
+        <div class="date-picker">
+            <input type="text" id="birthdate" placeholder="Select Date & Time">
+        </div>
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="result">
+            <h2>Your Age:</h2>
+            <p id="age-display">- Years, - Months, - Days, - Hours, - Minutes, - Seconds</p>
+            <p id="day-display">You were born on: -</p>
+            <p id="total-days-display">Total Days Lived: -</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FFFAF1, #FCFBF4); 
+    color: #4a2f2f; 
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #6d214f;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8d4a4a;
+    margin-bottom: 10px;
+}
+
+.date-picker {
+    position: relative;
+    width: 100%;
+}
+
+.date-picker input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    color: #6d214f;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.date-picker::after {
+    content: "\1F4C5"; 
+    font-size: 22px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6d214f;
+    pointer-events: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff6b81, #ff4757);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 107, 129, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff4757, #ff6b81);
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
